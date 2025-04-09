@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоология</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Левый блок управления -->
+            <div class="col-md-3 col-sm-12 sidebar">
+                <h4 class="mt-4 text-white">Басқару мәзірі</h4>
+                <!-- Форма поиска -->
+                <form id="searchForm" class="mb-4">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Поиск по темам..." maxlength="50">
+                </form>
+
+                    <!-- Existing menu and search form -->
+                    <h5 class="mt-4 text-white">Балықтардың электрондық анықтағышы</h5>
+                    <div class="alphabet-list">
+                        <a href="#a">А</a>
+                        <a href="#b">Б</a>
+                        <a href="#k">К</a>
+                        <a href="#k1">Қ</a>
+                        <a href="#l">Л</a>
+                        <a href="#o">О</a>
+                        <a href="#p">П</a>
+                        <a href="#c">С</a>
+                        <!-- Add more letters as needed -->
+                    </div>
+
+                <div class="accordion mt-4" id="accordionExample">
+                    <!-- Тема 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Зертханалық сабақ №1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema1.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema1.html#a2" class="text-decoration-none text-dark">➤ Тапсырма және оған түсініктеме</a></li>
+                                    <li><a href="page/tema1.html#a3" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema1.html#a4" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema1.html#a5" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Зертханалық сабақ №2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema2.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema2.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema2.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema2.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema2.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema2.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema2.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Зертханалық сабақ №3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema3.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema3.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema3.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema3.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema3.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema3.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema3.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Зертханалық сабақ №4
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema4.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema4.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema4.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema4.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema4.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema4.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema4.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Зертханалық сабақ №5
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema5.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema5.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema5.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema5.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema5.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema5.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema5.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Зертханалық сабақ №6
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema6.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema6.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema6.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema6.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema6.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema6.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema6.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed text-dark" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Зертханалық сабақ №7
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema7.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema7.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema7.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema7.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema7.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema7.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema7.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 8 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Зертханалық сабақ №8
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema8.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema8.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema8.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema8.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema8.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema8.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema8.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Тема 9 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Зертханалық сабақ №9
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema9.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema9.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema9.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema9.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema9.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+				                    <li><a href="page/tema9.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+				                    <li><a href="page/tema9.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 10 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                Зертханалық сабақ №10
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema10.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema10.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema10.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema10.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema10.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema10.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema10.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 11 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                Зертханалық сабақ №11
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema11.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema11.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema11.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema11.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру. Тест</a></li>
+                                    <li><a href="page/tema11.html#a5" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema11.html#a6" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 12 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwelve">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                Зертханалық сабақ №12
+                            </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema12.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema12.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema12.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema12.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema12.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema12.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema12.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 13 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThirteen">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                Зертханалық сабақ №13
+                            </button>
+                        </h2>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema13.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema13.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema13.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema13.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema13.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema13.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema13.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 14 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFourteen">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                Зертханалық сабақ №14
+                            </button>
+                        </h2>
+                        <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema14.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema14.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema14.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema14.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema14.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema14.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema14.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Тема 15 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFifteen">
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                Зертханалық сабақ №15
+                            </button>
+                        </h2>
+                        <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <ul>
+                                    <li><a href="page/tema15.html#a1" class="text-decoration-none text-dark">➤ Кіріспе</a></li>
+                                    <li><a href="page/tema15.html#a2" class="text-decoration-none text-dark">➤ Тапсырмаға түсініктеме</a></li>
+                                    <li><a href="page/tema15.html#a3" class="text-decoration-none text-dark">➤ Жұмыстың барысы</a></li>
+                                    <li><a href="page/tema15.html#a4" class="text-decoration-none text-dark">➤ Өзін-өзі тексеру</a></li>
+                                    <li><a href="page/tema15.html#a5" class="text-decoration-none text-dark">➤ Тест</a></li>
+                                    <li><a href="page/tema15.html#a6" class="text-decoration-none text-dark">➤ Бақылау сұрақтары</a></li>
+                                    <li><a href="page/tema15.html#a7" class="text-decoration-none text-dark">➤ Пайдаланылған әдебиеттер</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Основной блок -->
+            <div class="col-md-9 col-sm-12 main-content bg-white">
+                <h2 class="mt-4">Зоология</h2>
+                <!-- Ограничение размера картинки -->
+                <img src="img/image1.jpg" alt="Картинка" class="limited-img mb-4">
+                <p>
+                    <strong>Зоология (грек тілінен. zoon-жануар және logos-ғылым, ілім, сөз)</strong> — жануарлар әлемін зерттейтін ғылым.
+                </p>
+                <p>
+                    Бұл қазіргі уақытта өмір сүріп жатқан немесе бұрын жер бетінде өмір сүрген жануарлардың барлық топтарының әрқайсысының құрылымы, ұрықтың дамуы, тіршілік әрекеті, тіршілік ету ортасына қатынасы, географиялық таралуы, шығу тегі мен мінез-құлқы туралы ғылым.
+                </p>
+                <p>
+                    Зоологияның зерттеу нысаны-жануарлар, жануарлар өмірінің барлық көріністері: көбею, қоректену, таралу, көбею, мінез-құлық, сыртқы және ішкі құрылымдары және т. б.
+                </p>
+                <p>
+                    Зоологияның негізгі міндеттері - жануарлар өмірінің көріністерінің заңдылықтарын зерттеу және жануарларды жүйелеу.
+                </p>
+
+                <h2>Балықтардың электрондық анықтағышы</h2>
+                <div class="row fish-table">
+                    <!-- Первый столбец -->
+                    <div class="col-md-3">
+                        <a name="a"><h3>А</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish1.png" alt="Ақмарқа, Жерех, Aspius" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal1">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal1">Ақмарқа, Жерех, Aspius</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish2.png" alt="Ақсақа, Сиг, Coregonus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal2">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal2">Ақсақа, Сиг, Coregonus</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish3.png" alt="Ақтұқы, Язь, Leuciscus idus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal3">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal3">Ақтұқы, Язь, Leuciscus idus</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish4.png" alt="Алабұға, Окунь, Perca" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal4">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal4">Алабұға, Окунь, Perca</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish5.png" alt="Алтын мөңке, Золотой карась, Carassius carassius" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal5">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal5">Алтын мөңке, Золотой карась, Carassius carassius</a>
+                        </div>
+                        <!-- Добавьте больше рыб для буквы "" -->
+                        
+                        <a name=""><h3>Л</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish21.png" alt="Лақа, Налим, Lota" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal21">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal21">Лақа, Налим, Lota</a>
+                        </div>
+                    </div>
+
+                    <!-- Второй столбец -->
+                    <div class="col-md-3">
+                        <a name="b"><h3>Б</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish6.png" alt="Беріш, Бёрш, Sander" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal6">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal6">Беріш, Бёрш, Sander</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish7.png" alt="Оңғақ, Линь, Tinca tinca" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal7">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal7">Оңғақ, Линь, Tinca tinca</a>
+                        </div>
+                        <!-- Добавьте рыб для буквы "" -->
+
+                        <a name="o"><h3>О</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish22.png" alt="Лақа, Налим, Lota" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal22">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal22">Лақа, Налим, Lota</a>
+                        </div>
+                    </div>
+
+                    <!-- Второй столбец -->
+                    <div class="col-md-3">
+                        <a name="k"><h3>К</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish8.png" alt="Кәдімгі қадырғы, Хариус обыкновенный, Thymallus thymallus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal8">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal8">Кәдімгі қадырғы, Хариус обыкновенный, Thymallus thymallus</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish9.png" alt="Кәдімгі табан, Обыкновенный лещ, Abramis brama" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal9">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal9">Кәдімгі табан, Обыкновенный лещ, Abramis brama</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish10.png" alt="Кәдімгі таутан, Обыкновенный ёрш, Gymnocephalus cernuus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal10">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal10">Кәдімгі таутан, Обыкновенный ёрш, Gymnocephalus cernuus</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish11.png" alt="Кәдімгі торта, Обыкновенная плотва, Rutilus rutilus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal11">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal11">Кәдімгі торта, Обыкновенная плотва, Rutilus rutilus</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish12.png" alt="Кәдімгі тұқы, Обыкновенный карп, Cyprinus carpio" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal12">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal12">Кәдімгі тұқы, Обыкновенный карп, Cyprinus carpio</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish13.png" alt="Кәдімгі шортан, Обыкновенная щука, Esox lucius" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal13">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal13">Кәдімгі шортан, Обыкновенная щука, Esox lucius</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish14.png" alt="Көкшарбы, Ряпушка, Coregonus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal14">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal14">Көкшарбы, Ряпушка, Coregonus</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish15.png" alt="Көкшұбар, Рипус, Coregonus albula ladogensis" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal15">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal15">Көкшұбар, Рипус, Coregonus albula ladogensis</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish16.png" alt="Күміс мөңке, Серебряный карась, Carassius gibelio" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal16">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal16">Күміс мөңке, Серебряный карась, Carassius gibelio</a>
+                        </div>
+                        <!-- Добавьте рыб для буквы "" -->
+
+                        <a name="p"><h3>П</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish23.png" alt="Пайдабалық, Пелядь, Coregonus peled" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal23">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal23">Пайдабалық, Пелядь, Coregonus peled</a>
+                        </div>
+                    </div>
+
+                    <!-- Второй столбец -->
+                    <div class="col-md-3">
+                        <a name="k1"><h3>Қ</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish17.png" alt="Қарабалық, Маринка, Schizothorax intermedius" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal17">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal17">Қарабалық, Маринка, Schizothorax intermedius</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish18.png" alt="Қаракөз, Вобла, Rutilus capicus " class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal18">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal18">Қаракөз, Вобла, Rutilus capicus </a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish19.png" alt="Қарапайым көксерке, Обыкновенный судак, Sander lucioperca" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal19">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal19">Қарапайым көксерке, Обыкновенный судак, Sander lucioperca</a>
+                        </div>
+                        <div class="fish-item">
+                            <img src="img/fish20.png" alt="Қызылқанат, Красноперка, Scardinius erythrophthalmus" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal20">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal20">Қызылқанат, Красноперка, Scardinius erythrophthalmus</a>
+                        </div>
+                        <!-- Добавьте рыб для буквы "" -->
+
+                        <a name="c"><h3>С</h3></a>
+                        <div class="fish-item">
+                            <img src="img/fish24.png" alt="Сазан, Сазан, Cyprinus carpio" class="fish-image" data-bs-toggle="modal" data-bs-target="#fishModal24">
+                            <a href="#" class="fish-name" data-bs-toggle="modal" data-bs-target="#fishModal24">Сазан, Сазан, Cyprinus carpio</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script> <!-- Подключение JS файла -->
+</body>
+</html>

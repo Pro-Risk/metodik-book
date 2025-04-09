@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="../css/stylestest.css">
+</head>
+<body>
+    <h1>Ішекқуыстылардың өкілі ретінде тұщы су гидрасының (Hydra oligactis) дене құрылысы</h1>
+    <form id="test-form">
+        <div style="margin-bottom: 20px;">
+            <label for="student-name">ФИО ученика:</label>
+            <input type="text" id="student-name" name="studentName" placeholder="Введите ФИО" maxlength="50" required>
+        </div>
+        <ol>
+            <!-- Вопросы и варианты ответов (вставить как есть) -->
+            <li>Гидраның тіршілік ету ортасы<br>
+                <input type="radio" name="q1" value="a"> a) Тұщы су қоймаларында<br>
+                <input type="radio" name="q1" value="b"> b) Тұзды теңіздерде<br>
+                <input type="radio" name="q1" value="c"> c) Құрлықта<br>
+                <input type="radio" name="q1" value="d"> d) Ауада<br>
+            </li>
+            <li>Гидра денесінің негізгі пішіні<br>
+                <input type="radio" name="q2" value="a"> a) Дөңгелек<br>
+                <input type="radio" name="q2" value="b"> b) Ұзын қапшық тәрізді<br>
+                <input type="radio" name="q2" value="c"> c) Үшбұрышты<br>
+                <input type="radio" name="q2" value="d"> d) Тікбұрышты<br>
+            </li>
+            <li>Гидраның ауыз саңылауы орналасады<br>
+                <input type="radio" name="q3" value="a"> a) Табанында<br>
+                <input type="radio" name="q3" value="b"> b) Денесінің бүйірінде<br>
+                <input type="radio" name="q3" value="c"> c) Ауыз конусының ортасында<br>
+                <input type="radio" name="q3" value="d"> d) Қармалауыштарының ұшында<br>
+            </li>
+            <li>Гидраның негізгі қоректену әдісі<br>
+                <input type="radio" name="q4" value="a"> a) Фотосинтез<br>
+                <input type="radio" name="q4" value="b"> b) Фильтрация<br>
+                <input type="radio" name="q4" value="c"> c) Жыртқыштық<br>
+                <input type="radio" name="q4" value="d"> d) Паразиттік<br>
+            </li>
+            <li>Гидра жасушалардан тұрады<br>
+                <input type="radio" name="q5" value="a"> a) Тек бұлшықет жасушаларынан<br>
+                <input type="radio" name="q5" value="b"> b) Тек жүйке жасушаларынан<br>
+                <input type="radio" name="q5" value="c"> c) Эпителий-бұлшықет, жүйке және ас қорыту жасушаларынан<br>
+                <input type="radio" name="q5" value="d"> d) Тек ас қорыту жасушаларынан<br>
+            </li>
+            <li>Гидраның жүйке жүйесінің типі<br>
+                <input type="radio" name="q6" value="a"> a) Орталықтандырылған<br>
+                <input type="radio" name="q6" value="b"> b) Диффузиялық<br>
+                <input type="radio" name="q6" value="c"> c) Радиалды<br>
+                <input type="radio" name="q6" value="d"> d) Омыртқалылардағыдай күрделі<br>
+            </li>
+            <li>Гидраның қозғалуы<br>
+                <input type="radio" name="q7" value="a"> a) Жүзу арқылы<br>
+                <input type="radio" name="q7" value="b"> b) Қармалауыштарын пайдаланып секіру арқылы<br>
+                <input type="radio" name="q7" value="c"> c) Су ағынымен жылжу арқылы<br>
+                <input type="radio" name="q7" value="d"> d) Ол мүлде қозғалмайды<br>
+            </li>
+            <li>Гидраның шаншу жасушаларының атауы<br>
+                <input type="radio" name="q8" value="a"> a) Книдоциттер<br>
+                <input type="radio" name="q8" value="b"> b) Нейроциттер<br>
+                <input type="radio" name="q8" value="c"> c) Лейкоциттер<br>
+                <input type="radio" name="q8" value="d"> d) Фагоциттер<br>
+            </li>
+            <li>Гидраның көбеюі<br>
+                <input type="radio" name="q9" value="a"> a) Тек жынысты жолмен<br>
+                <input type="radio" name="q9" value="b"> b) Тек жыныссыз жолмен<br>
+                <input type="radio" name="q9" value="c"> c) Жынысты және жыныссыз жолмен<br>
+                <input type="radio" name="q9" value="d"> d) Бөліну арқылы ғана<br>
+            </li>
+            <li>Гидраның қоректенуі<br>
+                <input type="radio" name="q10" value="a"> a) Өсімдіктермен<br>
+                <input type="radio" name="q10" value="b"> b) Ұсақ омыртқасыздармен<br>
+                <input type="radio" name="q10" value="c"> c) Өлі органикалық заттармен<br>
+                <input type="radio" name="q10" value="d"> d) Бактериялармен<br>
+            </li>
+            <!-- (Повторить для всех вопросов) -->
+        </ol>
+        <button type="submit">Отправить ответы</button>
+    </form>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Результаты теста</h2>
+            <p id="result-text"></p>
+            <button class="close-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="../js/scripttest4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+
+</body>
+</html>

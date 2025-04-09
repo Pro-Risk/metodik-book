@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="../css/stylestest.css">
+</head>
+<body>
+    <h1>Құстардың  морфологиялық және физиологиялық құрылыстары</h1>
+    <form id="test-form">
+        <div style="margin-bottom: 20px;">
+            <label for="student-name">ФИО ученика:</label>
+            <input type="text" id="student-name" name="studentName" placeholder="Введите ФИО" maxlength="50" required>
+        </div>
+        <ol>
+            <!-- Вопросы и варианты ответов (вставить как есть) -->
+            <li>Құстарды зерттейтін зоологияның бөлімі<br>
+                <input type="radio" name="q1" value="a"> a) Герпетология<br>
+                <input type="radio" name="q1" value="b"> b) Ихтиология<br>
+                <input type="radio" name="q1" value="c"> c) Орнитология<br>
+                <input type="radio" name="q1" value="d"> d) Энтомология<br>
+            </li>
+            <li>Құстардың дене бөліктері<br>
+                <input type="radio" name="q2" value="a"> a) Бас, мойын, қанат, дене, аяқ<br>
+                <input type="radio" name="q2" value="b"> b) Бас, мойын, құйрық<br>
+                <input type="radio" name="q2" value="c"> c) Тек қанат және аяқ<br>
+                <input type="radio" name="q2" value="d"> d) Бас, дене, құйрық<br>
+            </li>
+            <li>Құстардың денесін қаптайды<br>
+                <input type="radio" name="q3" value="a"> a) Қылшық<br>
+                <input type="radio" name="q3" value="b"> b) Жүн<br>
+                <input type="radio" name="q3" value="c"> c) Қауырсын<br>
+                <input type="radio" name="q3" value="d"> d) Тері<br>
+            </li>
+            <li>Қалыпты қауырсын бөліктері<br>
+                <input type="radio" name="q4" value="a"> a) Қалам және сабағы<br>
+                <input type="radio" name="q4" value="b"> b) Тек қалам<br>
+                <input type="radio" name="q4" value="c"> c) Сабағы және түбі<br>
+                <input type="radio" name="q4" value="d"> d) Қабыршақ және қалам<br>
+            </li>
+            <li>Ұшатын құстардың сүйек құрылысының ерекшелігі<br>
+                <input type="radio" name="q5" value="a"> a) Қалың, ауыр сүйектер<br>
+                <input type="radio" name="q5" value="b"> b) Жұқа, қуыс сүйектер<br>
+                <input type="radio" name="q5" value="c"> c) Тек қатты сүйектер<br>
+                <input type="radio" name="q5" value="d"> d) Суда жүзуге бейімделген<br>
+            </li>
+            <li>Құстардың бұлшық еттері жақсы дамыған бөлігі<br>
+                <input type="radio" name="q6" value="a"> a) Арқа бөлігінде<br>
+                <input type="radio" name="q6" value="b"> b) Қанаттарында<br>
+                <input type="radio" name="q6" value="c"> c) Іш бөлігінде<br>
+                <input type="radio" name="q6" value="d"> d) Басын қозғалтатын бұлшықеттер<br>
+            </li>
+            <li>Құстардың мойын омыртқаларының қызметі<br>
+                <input type="radio" name="q7" value="a"> a) Тек бастың қозғалысын шектейді<br>
+                <input type="radio" name="q7" value="b"> b) Бастың еркін қозғалуы үшін<br>
+                <input type="radio" name="q7" value="c"> c) Ұшу кезінде ауада тұру үшін<br>
+                <input type="radio" name="q7" value="d"> d) Тек тамақ жеуге көмектеседі<br>
+            </li>
+            <li>Құстардың жүйке жүйесінің жақсы дамыған бөлігі<br>
+                <input type="radio" name="q8" value="a"> a) Жұлын<br>
+                <input type="radio" name="q8" value="b"> b) Мишық және алдыңғы ми<br>
+                <input type="radio" name="q8" value="c"> c) Арқа миы<br>
+                <input type="radio" name="q8" value="d"> d) Ортаңғы ми<br>
+            </li>
+            <li>Құстардың жүрегінің бөліктерінің саны<br>
+                <input type="radio" name="q9" value="a"> a) Екі<br>
+                <input type="radio" name="q9" value="b"> b) Үш<br>
+                <input type="radio" name="q9" value="c"> c) Төрт<br>
+                <input type="radio" name="q9" value="d"> d) Бес<br>
+            </li>
+            <li>Құстардың зәр шығару жүйесінің ерекшелігі<br>
+                <input type="radio" name="q10" value="a"> a) Қуықтары болмайды<br>
+                <input type="radio" name="q10" value="b"> b) Зәр қапшығында жиналады<br>
+                <input type="radio" name="q10" value="c"> c) Несеп тікелей ішек арқылы шығарылады<br>
+                <input type="radio" name="q10" value="d"> d) Су арқылы сыртқа шығарылады<br>
+            </li>
+            
+            <!-- (Повторить для всех вопросов) -->
+        </ol>
+        <button type="submit">Отправить ответы</button>
+    </form>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Результаты теста</h2>
+            <p id="result-text"></p>
+            <button class="close-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="../js/scripttest14.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+
+</body>
+</html>

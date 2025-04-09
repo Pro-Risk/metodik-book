@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="../css/stylestest.css">
+</head>
+<body>
+    <h1>Ішексорғы (Parascaris equorum) мысалында нағыз жұмыр құрттардың дене құрылысы</h1>
+    <form id="test-form">
+        <div style="margin-bottom: 20px;">
+            <label for="student-name">ФИО ученика:</label>
+            <input type="text" id="student-name" name="studentName" placeholder="Введите ФИО" maxlength="50" required>
+        </div>
+        <ol>
+            <!-- Вопросы и варианты ответов (вставить как есть) -->
+            <li>Жұмыр құрттардың ғылымға белгілі қанша түрі бар?<br>
+                <input type="radio" name="q1" value="a"> a) 15 000<br>
+                <input type="radio" name="q1" value="b"> b) 27 000<br>
+                <input type="radio" name="q1" value="c"> c) 35 000<br>
+                <input type="radio" name="q1" value="d"> d) 50 000<br>
+            </li>
+            <li>Геогельминттерге қайсысы жатады?<br>
+                <input type="radio" name="q2" value="a"> a) Цепендер<br>
+                <input type="radio" name="q2" value="b"> b) Таспа құрттар<br>
+                <input type="radio" name="q2" value="c"> c) Жалпақ құрттар<br>
+                <input type="radio" name="q2" value="d"> d) Адам аскаридасы <br>
+            </li>
+            <li>Биогельминттерге қайсысы жатады?<br>
+                <input type="radio" name="q3" value="a"> a) Адам аскаридасы<br>
+                <input type="radio" name="q3" value="b"> b) Жылқы аскаридасы<br>
+                <input type="radio" name="q3" value="c"> c) Цепендер<br>
+                <input type="radio" name="q3" value="d"> d) Острица<br>
+            </li>
+            <li>Аскаридалар адамның қай мүшесінде тіршілік етеді?<br>
+                <input type="radio" name="q4" value="a"> a) Бауыр<br>
+                <input type="radio" name="q4" value="b"> b) Өкпе<br>
+                <input type="radio" name="q4" value="c"> c) Ішек<br>
+                <input type="radio" name="q4" value="d"> d) Тері<br>
+            </li>
+            <li>Аскариданың аналығының ұзындығы қанша?<br>
+                <input type="radio" name="q5" value="a"> a) 10-20 см<br>
+                <input type="radio" name="q5" value="b"> b) 15-25 см<br>
+                <input type="radio" name="q5" value="c"> c) 20-40 см<br>
+                <input type="radio" name="q5" value="d"> d) 50-70 см<br>
+            </li>
+            <li>Аскаридалар қанша уақыт өмір сүреді?<br>
+                <input type="radio" name="q6" value="a"> a) 1 апта<br>
+                <input type="radio" name="q6" value="b"> b) 3 ай<br>
+                <input type="radio" name="q6" value="c"> c) 1 жылға дейін<br>
+                <input type="radio" name="q6" value="d"> d) 5 жыл<br>
+            </li>
+            <li>Аскаридалар көбінесе кімдерге қауіпті?<br>
+                <input type="radio" name="q7" value="a"> a) Ересектерге<br>
+                <input type="radio" name="q7" value="b"> b) Балаларға<br>
+                <input type="radio" name="q7" value="c"> c) Қарт адамдарға<br>
+                <input type="radio" name="q7" value="d"> d) Тек жануарларға<br>
+            </li>
+            <li>Аскариданың уытты қалдықтары неге әсер етеді?<br>
+                <input type="radio" name="q8" value="a"> a) Жүрек-қантамыр жүйесіне<br>
+                <input type="radio" name="q8" value="b"> b) Ас қорыту жүйесіне<br>
+                <input type="radio" name="q8" value="c"> c) Нерв жүйесіне<br>
+                <input type="radio" name="q8" value="d"> d) Бұлшықеттерге<br>
+            </li>
+            <li>Аскарида көп көбейіп кетсе қандай қауіп төндіреді?<br>
+                <input type="radio" name="q9" value="a"> a) Қанның ластануына әкеледі<br>
+                <input type="radio" name="q9" value="b"> b) Ішекті бекітіп, өлімге әкелуі мүмкін<br>
+                <input type="radio" name="q9" value="c"> c) Жүрекке әсер етеді<br>
+                <input type="radio" name="q9" value="d"> d) Теріні жарақаттайды<br>
+            </li>
+            <li>Ішексорғыда сақтану үшін не істеу керек?<br>
+                <input type="radio" name="q10" value="a"> a) Жеміс-жидектерді жуып жеу<br>
+                <input type="radio" name="q10" value="b"> b) Тек ет жеу<br>
+                <input type="radio" name="q10" value="c"> c) Үнемі дәрі ішу<br>
+                <input type="radio" name="q10" value="d"> d) Спортпен айналысу<br>
+            </li>
+            <!-- (Повторить для всех вопросов) -->
+        </ol>
+        <button type="submit">Отправить ответы</button>
+    </form>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Результаты теста</h2>
+            <p id="result-text"></p>
+            <button class="close-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="../js/scripttest6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+
+</body>
+</html>

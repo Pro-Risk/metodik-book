@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="../css/stylestest.css">
+</head>
+<body>
+    <h1>Жоғары сатыдағы шаянтәрізділердің  өкілі ретінде өзен шаянының (Astacus leptodactylus) сыртқы морфологиясы</h1>
+    <form id="test-form">
+        <div style="margin-bottom: 20px;">
+            <label for="student-name">ФИО ученика:</label>
+            <input type="text" id="student-name" name="studentName" placeholder="Введите ФИО" maxlength="50" required>
+        </div>
+        <ol>
+            <!-- Вопросы и варианты ответов (вставить как есть) -->
+            <li>Өзен шаяны жататын жәндіктер тобы<br>
+                <input type="radio" name="q1" value="a"> a) Ұлулар<br>
+                <input type="radio" name="q1" value="b"> b) Буынаяқтылар<br>
+                <input type="radio" name="q1" value="c"> c) Құрттар<br>
+                <input type="radio" name="q1" value="d"> d) Омыртқалылар<br>
+            </li>
+            <li>Өзен шаянының денесі қапталған<br>
+                <input type="radio" name="q2" value="a"> a) Сыртқы хитинді қабықпен<br>
+                <input type="radio" name="q2" value="b"> b) Сұйық қабықпен<br>
+                <input type="radio" name="q2" value="c"> c) Қатты сүйекті қабықпен<br>
+                <input type="radio" name="q2" value="d"> d) Ішкі шеміршекті қабықпен<br>
+            </li>
+            <li>Өзен шаянының денесінің бөлімдері<br>
+                <input type="radio" name="q3" value="a"> a) Бас, кеуде, құрсақ<br>
+                <input type="radio" name="q3" value="b"> b) Баскөкірек, құрсақ<br>
+                <input type="radio" name="q3" value="c"> c) Тек құрсақ<br>
+                <input type="radio" name="q3" value="d"> d) Тек бас<br>
+            </li>
+            <li>Өзен шаянының жұп аяқтарының саны<br>
+                <input type="radio" name="q4" value="a"> a) 3<br>
+                <input type="radio" name="q4" value="b"> b) 4<br>
+                <input type="radio" name="q4" value="c"> c) 5<br>
+                <input type="radio" name="q4" value="d"> d) 6<br>
+            </li>
+            <li>Өзен шаянының тыныс алуы<br>
+                <input type="radio" name="q5" value="a"> a) Терісі арқылы<br>
+                <input type="radio" name="q5" value="b"> b) Өкпесі арқылы<br>
+                <input type="radio" name="q5" value="c"> c) Желбезек арқылы<br>
+                <input type="radio" name="q5" value="d"> d) Тыныс тесіктері арқылы<br>
+            </li>
+            <li>Өзен шаянының тіршілік ету ортасы<br>
+                <input type="radio" name="q6" value="a"> a) Тұщы суда<br>
+                <input type="radio" name="q6" value="b"> b) Тұзды суда<br>
+                <input type="radio" name="q6" value="c"> c) Құрлықта<br>
+                <input type="radio" name="q6" value="d"> d) Ауада<br>
+            </li>
+            <li>Өзен шаянының негізгі қорегі <br>
+                <input type="radio" name="q7" value="a"> a) Өсімдік қалдықтары мен ұсақ жәндіктер<br>
+                <input type="radio" name="q7" value="b"> b) Тек шөптер<br>
+                <input type="radio" name="q7" value="c"> c) Тек етті азықтар<br>
+                <input type="radio" name="q7" value="d"> d) Ауадағы микробтар<br>
+            </li>
+            <li>Өзен шаянының бірінші аяқ жұбының қызметі<br>
+                <input type="radio" name="q8" value="a"> a) Қозғалу<br>
+                <input type="radio" name="q8" value="b"> b) Қорғану және қорек ұстау<br>
+                <input type="radio" name="q8" value="c"> c) Дем алу<br>
+                <input type="radio" name="q8" value="d"> d) Жұмыртқа тасу<br>
+            </li>
+            <li>Өзен шаянының көбеюі<br>
+                <input type="radio" name="q9" value="a"> a) Дара жынысты<br>
+                <input type="radio" name="q9" value="b"> b) Гермафродит<br>
+                <input type="radio" name="q9" value="c"> c) Бөліну арқылы<br>
+                <input type="radio" name="q9" value="d"> d) Өсімді көбею<br>
+            </li>
+            <li>Өзен шаянының экологиялық маңызы<br>
+                <input type="radio" name="q10" value="a"> a) Су қоймаларын тазартады<br>
+                <input type="radio" name="q10" value="b"> b) Өсімдік тозаңдандыруға көмектеседі<br>
+                <input type="radio" name="q10" value="c"> c) Топырақты қопсытады<br>
+                <input type="radio" name="q10" value="d"> d) Ауаны тазартады<br>
+            </li>
+            <!-- (Повторить для всех вопросов) -->
+        </ol>
+        <button type="submit">Отправить ответы</button>
+    </form>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Результаты теста</h2>
+            <p id="result-text"></p>
+            <button class="close-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="../js/scripttest7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+
+</body>
+</html>

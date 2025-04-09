@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="../css/stylestest.css">
+</head>
+<body>
+    <h1>Уақытша препараттар дайындау</h1>
+    <form id="test-form">
+        <div style="margin-bottom: 20px;">
+            <label for="student-name">ФИО ученика:</label>
+            <input type="text" id="student-name" name="studentName" placeholder="Введите ФИО" maxlength="50" required>
+        </div>
+        <ol>
+            <!-- Вопросы и варианты ответов (вставить как есть) -->
+            <li>Микроскопты жұмыс үстеліне дұрыс қою ережесі<br>
+                <input type="radio" name="q1" value="a"> a) губкалар<br>
+                <input type="radio" name="q1" value="b"> b) тікентерілілер<br>
+                <input type="radio" name="q1" value="c"> c) ішекқуыстылар<br>
+                <input type="radio" name="q1" value="d"> d) хордалылар<br>
+            </li>
+            <li>Зерттелетін затты орналастырады<br>
+                <input type="radio" name="q2" value="a"> a) Петри табақшасына<br>
+                <input type="radio" name="q2" value="b"> b) Заттық шыныға<br>
+                <input type="radio" name="q2" value="c"> c) Металл пластинаға<br>
+                <input type="radio" name="q2" value="d"> d) Пластик табақшаға<br>
+            </li>
+            <li>Жабын әйнекпен препаратты жабу кезінде әйнекті қою ережесі<br>
+                <input type="radio" name="q3" value="a"> a) Кенеттен тасталады<br>
+                <input type="radio" name="q3" value="b"> b) Бір жиектен баяу түсіріледі<br>
+                <input type="radio" name="q3" value="c"> c) Тікелей басып қойылады<br>
+                <input type="radio" name="q3" value="d"> d) Алдымен қыздырылып, содан кейін қойылады<br>
+            </li>
+            <li>Препараттың айқын бейнесін реттейтін микроскоптың бұрандасы<br>
+                <input type="radio" name="q4" value="a"> a) Макровинт<br>
+                <input type="radio" name="q4" value="b"> b) Микровинт<br>
+                <input type="radio" name="q4" value="c"> c) Айна<br>
+                <input type="radio" name="q4" value="d"> d) Жарық реттегіш<br>
+            </li>
+            <li>Препарат бекінетін микроскоптың бөлігі<br>
+                <input type="radio" name="q5" value="a"> a) Окулярға<br>
+                <input type="radio" name="q5" value="b"> b) Объективке<br>
+                <input type="radio" name="q5" value="c"> c) Заттық үстелше<br>
+                <input type="radio" name="q5" value="d"> d) Лампаның үстіне<br>
+            </li>
+                <li>Препаратты көрген кезде ең бірінші қойылатын үлкейту<br>
+                <input type="radio" name="q6" value="a"> a) 4x немесе 10x<br>
+                <input type="radio" name="q6" value="b"> b) 40x немесе 100x<br>
+                <input type="radio" name="q6" value="c"> c) 400x<br>
+                <input type="radio" name="q6" value="d"> d) 1000x<br>
+            </li>
+            <li>Объектіні көлденең жазықтықта жылжытуға көмектесетін микроскоптыың бөлігі<br>
+                <input type="radio" name="q7" value="a"> a) Окуляр<br>
+                <input type="radio" name="q7" value="b"> b) Объектив<br>
+                <input type="radio" name="q7" value="c"> c) Объект ұстағыш<br>
+                <input type="radio" name="q7" value="d"> d) Жарық көзі<br>
+            </li>
+            <li>Амебаның қозғалысы жүзеге асырылады<br>
+                <input type="radio" name="q8" value="a"> a) Кірпікшелер арқылы<br>
+                <input type="radio" name="q8" value="b"> b) Жалған аяқтары арқылы<br>
+                <input type="radio" name="q8" value="c"> c) Жүзу қанаттары арқылы<br>
+                <input type="radio" name="q8" value="d"> d) Белсенді жиырылу процестері арқылы<br>
+            </li>
+            <li>Ас қорыту вакуольдерін қамтитын амебаның қабаты<br>
+                <input type="radio" name="q9" value="a"> a) Эктоплазма<br>
+                <input type="radio" name="q9" value="b"> b) Эндоплазма<br>
+                <input type="radio" name="q9" value="c"> c) Плазмалемма<br>
+                <input type="radio" name="q9" value="d"> d) Цитоскелет<br>
+            </li>
+            <li>Тірі амебада көру мүмкін емес органоид<br>
+                <input type="radio" name="q10" value="a"> a) Цитоплазманы<br>
+                <input type="radio" name="q10" value="b"> b) Ас қорыту вакуольдерін<br>
+                <input type="radio" name="q10" value="c"> c) Ядроны<br>
+                <input type="radio" name="q10" value="d"> d) Жалған аяқтарын<br>
+            </li>
+            <!-- (Повторить для всех вопросов) -->
+        </ol>
+        <button type="submit">Отправить ответы</button>
+    </form>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Результаты теста</h2>
+            <p id="result-text"></p>
+            <button class="close-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="../js/scripttest1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+
+</body>
+</html>

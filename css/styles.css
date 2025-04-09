@@ -1,0 +1,90 @@
+/* Общий стиль для всего сайта */
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-family: 'Montserrat', regular;
+}
+
+/* Стили для основного контента */
+.main-content {
+    padding-left: 20px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 0;
+        padding-top: 20px;
+        border-left: none;
+    }
+}
+
+/* Левый блок - меню управления */
+.sidebar {
+    background-color: #343a40;
+    min-height: 100vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Поле поиска */
+#searchInput {
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Ограничение размеров картинки */
+.limited-img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Заголовки тем */
+.accordion-button {
+    background-color: #ffffff;
+    color: #343a40;
+    border-radius: 0px;
+}
+
+.accordion-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.accordion-item {
+    border: none;
+}
+
+/* Стили для элементов выпадающего меню */
+.accordion-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-body ul li a {
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px 0;
+    display: block;
+}
+
+.accordion-body ul li a:hover {
+    color: #0056b3;
+}
+
+/* Стиль текста заголовков */
+h4 {
+    color: #ffffff;
+}
